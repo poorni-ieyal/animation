@@ -1,0 +1,137 @@
+.banner {
+  margin-top: 70px;
+  color: var(--text-color);
+}
+
+.para{
+    color: #EAEAEA;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.banner-img{
+    width: 670px;
+    height: auto;
+    max-width: 100%;
+}
+
+.banner h1{
+    font-family: var(--font-regular);
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 45px;
+    color: var(--header-font-color);
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.sub-text{
+color: #EBB14D;
+}
+
+.gradient-btn{
+    background: var(--button-gradient);
+    border-radius: 25px;
+    color: var(--header-font-color);
+    font-size: 16px;
+    font-family: var(--font-regular);
+    opacity: 1;
+    padding: 8px 40px;
+}
+
+.btn-common{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact{
+    color: #F0711F;
+    font-size: 16px;
+    font-family: var(--font-regular);
+}
+
+.gap-div{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main{
+    margin-top: 110px;
+}
+
+
+
+
+
+/* mobile banner responsive */
+@media only screen and (max-width:991px){
+    .img1{
+        margin-top: 0;
+        display: block;
+        width: 100px;
+        height: auto;
+    }
+    .images{
+        margin-top:61px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+
+    }
+    .banner{
+        display: none;
+    }
+    .banner-img{
+        width: 345px;
+        height: auto;
+    }
+    .mobile-banner h1{
+        font-size: 36px;
+        font-family: var(--font-bold);
+    }
+    .join-btn{
+        width: 100%;
+    }
+    .Transactions1{
+        border: none;
+        background: none;
+    }
+    .buttons2 h4{
+        font-size: 18px;
+    }
+    .buttons2 {
+        display: flex;
+        justify-content: center;
+    }
+    .mobile-banner{
+        color: var(--text-color);
+    }
+    .Transactions1 h4{
+        color: var(--text-color);
+    
+    }
+
+
+}
+
+@media only screen and (min-width:992px){
+    .mobile-banner{
+        display: none;
+    }
+   
+}
+   

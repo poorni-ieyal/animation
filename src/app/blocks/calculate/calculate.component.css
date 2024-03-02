@@ -1,0 +1,37 @@
+.calculate{
+    margin-top: 100px;
+}
+.calculate h2{
+    font-size: 56px;
+    font-family: var(--font-bold);
+    text-align: center;
+    color: var(--text-color);
+}
+.calc_image{
+    width: 480px;
+    height: auto;
+}
+.calc_main{
+    background-color: white;
+
+}
+.card-calculate{
+    background-color: #F1FDE7;
+    padding: 70px 40px 0 90px
+}
+.content h3{
+    font-size: 56px;
+    font-family: var(--font-medium);
+}
+.content h6{
+    font-family: var(--font-regular);
+    font-size:20px ;
+}
+.double{
+    position: sticky;
+    top: 50px;
+}
+.calc_main{
+    position: sticky;
+    top: 0;
+}

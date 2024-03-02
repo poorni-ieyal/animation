@@ -1,0 +1,146 @@
+.header-left img {
+  width: 130px;
+  height: auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--header-font-color);
+  height: 70px;
+  cursor: pointer;
+}
+.header1 {
+  background: var(--header-background);
+  border: 2px solid #ffab40;
+  border-radius: 10px;
+ 
+}
+.main {
+  margin-top: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* .main{
+    background-color: var(--primaryColor);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+} */
+.header-center {
+  display: flex;
+  gap: 20px;
+}
+.header-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.header h6 {
+  font-size: 16px;
+  font-family: var(--font-medium);
+  margin-bottom: 0;
+}
+.active {
+  color: var(--secondary_color);
+}
+.icon {
+  font-size: 20px;
+}
+.reg-button {
+  background: var(--button-background);
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border-radius: 25px;
+opacity: 1;
+  color: var(--primaryColor);
+  font-size: 16px;
+  font-family: var(--font-regular);
+  padding: 12px 24px;
+  border: none;
+}
+
+/* Responsive Mobile*/
+@media only screen and (max-width: 991px) {
+  .main {
+    display: none;
+  }
+  .header-left img {
+    width: 130px;
+    height: auto;
+  }
+  .mobile-header {
+    background: var(--header-background);
+    height: 60px;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+}
+
+/* Responsive Desktop*/
+@media only screen and (min-width: 992px) {
+  .menu {
+    display: none;
+  }
+  .mobile-header {
+    display: none;
+  }
+}
+
+/* Responsive mobile */
+@media only screen and (max-width:991px){
+    .menu {
+        border: none;
+        font-size: 30px;
+        background: transparent;
+        color: var(--header-font-color);
+      }
+      .offcanvas {
+        width: 70%;
+        background: #FC8D2D;
+      }
+      .close-icon {
+        color: var(--header-font-color) !important;
+        font-size: 30px;
+        padding: 0px;
+        border: none;
+        background: none;
+      }
+      .offcanvas-header img {
+        width: 130px;
+        height: auto;
+      }
+      .offcanvas-header {
+        background-color: var(--header-background);
+      }
+      .offcanvas-body p {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        color: var(--header-font-color);
+      }
+      .offcanvas-body a {
+        text-decoration: none;
+        color: var(--header-font-color);
+        font-size: 16px;
+        font-family: var(--font-medium);
+      }
+      .right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .icon {
+        font-size: 20px;
+        color: var(--header-font-color);
+      }
+}
