@@ -4,9 +4,11 @@
 }
 
 .para{
-    color: #EAEAEA;
+    color: #000000;
     font-size: 16px;
-    line-height: 21px;
+    line-height: 25px;
+    font-family: var(--font-regular);
+    margin: 0;
 }
 
 .banner-img{
@@ -16,11 +18,11 @@
 }
 
 .banner h1{
-    font-family: var(--font-regular);
+    font-family: var(--font-bold);
     font-size: 36px;
-    font-weight: 900;
     line-height: 45px;
-    color: var(--header-font-color);
+    color: var(--primary-color);
+    margin: 0;
 }
 
 .buttons{
@@ -29,8 +31,45 @@
     align-items: center;
 }
 
-.sub-text{
-color: #EBB14D;
+/* .text-container span{
+color: #FC8D2C;
+font-family: var(--font-bold);
+margin: 0;
+height: 2.5rem;
+
+animation: moveUp 8s linear infinite;
+font-size: 32px;
+
+font-family: var(--font-bold);
+} */
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 2.5rem; /* Adjust according to your design */
+}
+
+
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Smooth transition effect */
+  color: #FC8D2C;
+  font-family: var(--font-bold);
+  /* text-align: center; */
+}
+
+/* .show{
+  text-align: center;
+} */
+
+.text.show {
+  opacity: 1;
+  text-align: center;
 }
 
 .gradient-btn{
@@ -38,9 +77,10 @@ color: #EBB14D;
     border-radius: 25px;
     color: var(--header-font-color);
     font-size: 16px;
-    font-family: var(--font-regular);
+    font-family: var(--font-medium);
     opacity: 1;
     padding: 8px 40px;
+    border: none;
 }
 
 .btn-common{
@@ -50,10 +90,12 @@ color: #EBB14D;
 }
 
 .contact{
-    color: #F0711F;
+    color: #FC8D2C;
     font-size: 16px;
-    font-family: var(--font-regular);
+    font-family: var(--font-medium);
+    margin: 0;
 }
+    
 
 .gap-div{
     display: flex;
@@ -72,66 +114,25 @@ color: #EBB14D;
 }
 
 
-
-
-
 /* mobile banner responsive */
 @media only screen and (max-width:991px){
-    .img1{
-        margin-top: 0;
-        display: block;
-        width: 100px;
-        height: auto;
-    }
-    .images{
-        margin-top:61px;
-        display: flex;
+    .btn-common{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap:20px;
-
     }
-    .banner{
-        display: none;
+    .banner h1, .para{
+        text-align: center;
     }
-    .banner-img{
-        width: 345px;
-        height: auto;
+    .text{
+      display: block;
+      text-align: center;
+      width: 100%;
     }
-    .mobile-banner h1{
-        font-size: 36px;
-        font-family: var(--font-bold);
-    }
-    .join-btn{
-        width: 100%;
-    }
-    .Transactions1{
-        border: none;
-        background: none;
-    }
-    .buttons2 h4{
-        font-size: 18px;
-    }
-    .buttons2 {
-        display: flex;
-        justify-content: center;
-    }
-    .mobile-banner{
-        color: var(--text-color);
-    }
-    .Transactions1 h4{
-        color: var(--text-color);
     
-    }
-
 
 }
 
 @media only screen and (min-width:992px){
-    .mobile-banner{
-        display: none;
-    }
+  
    
 }
    

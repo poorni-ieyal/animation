@@ -4,34 +4,59 @@
     --primaryColor: #000000;
     --header-font-color:#fff;
     --button-background:#FFFFFF 0% 0% no-repeat padding-box;;
-    --header-background: #F0711F 0% 0% no-repeat padding-box;
-    --button-gradient:transparent linear-gradient(180deg, #FFAB40 0%, #ADADAD 51%, #1CA7FD 100%) 0% 0% no-repeat padding-box;
+    --header-background: #FC8D2C 0% 0% no-repeat padding-box;
+    --button-gradient:#FC8D2C;
     --secondary_color:#B5FF7B;
+ 
     --font-regular: 'font-regular';
     --font-medium: 'font-medium';
     --font-semibold: 'font-semibold';
     --font-bold: 'font-bold';
+    --font-regularr: 'font-regularr';
+    --font-mediumm: 'font-mediumm';
+    --font-semiboldd: 'font-semiboldd';
+    --font-bold: 'font-boldd';
     --text-color:#000;
     
 }
 
-@font-face {
-    font-family: 'font-bold';
+ @font-face {
+    font-family: 'font-boldd';
     src: url(./assets/fonts/FuturaPTBold.otf);
 }
 
 @font-face {
-    font-family: 'font-medium';
+    font-family: 'font-mediumm';
     src: url(./assets/fonts/FuturaPTMedium.otf);
 }
 
 @font-face {
-    font-family: 'font-regular';
+    font-family: 'font-regularr';
     src: url(./assets/fonts/FuturaPTDemi.otf);
+} 
+
+@font-face {
+    font-family: 'font-bold';
+    src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'font-semibold';
+    src: url(./assets/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'font-medium';
+    src: url(./assets/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'font-regular';
+    src: url(./assets/fonts/Poppins-Regular.ttf);
 }
 
 body {
-    background-color: #171616 !important;
+    background-color: #fff !important;
     /* transition: background-color 0.5s ease;  */
     transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition effect for both background color and text color */
   }

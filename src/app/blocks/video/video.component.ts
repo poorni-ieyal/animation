@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,6 +9,8 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./video.component.css']
 })
 export class VideoComponent {
+  @ViewChild('videoPlayer')
+  videoPlayer!: ElementRef;
 
   isScrolled: boolean = false;
 
@@ -34,11 +36,23 @@ export class VideoComponent {
     }
   }
 
-  playVideo(){
-    const youtubeLink = 'https://www.youtube.com/watch?v=H77P44Ki6QY&t=4s';
-    window.open(youtubeLink);
-
+  play() {
+    this.videoPlayer.nativeElement.play();
   }
+
+  pause() {
+    this.videoPlayer.nativeElement.pause();
+  }
+
+  toggleMute() {
+    this.videoPlayer.nativeElement.muted = !this.videoPlayer.nativeElement.muted;
+  }
+
+  // playVideo(){
+  //   const youtubeLink = 'https://www.youtube.com/watch?v=H77P44Ki6QY&t=4s';
+  //   window.open(youtubeLink);
+
+  // }
 }
 
 

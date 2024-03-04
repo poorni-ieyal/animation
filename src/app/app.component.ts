@@ -13,5 +13,5 @@ import { HomeComponent } from './pages/home/home.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'swaranya-clinic';
+  title = 'Building doctor';
 }

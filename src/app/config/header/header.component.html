@@ -60,6 +60,7 @@
 </div>
 
 <!-- Mobile header -->
+
 <div class="mobile-header">
     <div class="container">
         <div class="left">
@@ -69,46 +70,100 @@
 
 
 <div class="right">
-    <button class="menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-list"></i></button>
-
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <button class="menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="bi bi-list"></i></button>
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel">        
+        <!-- <h5 class="offcanvas-title" id="offcanvasTopLabel">        
             <img src="../../../assets/logo/logo.png" class="logo_img" alt="logo">
-        </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </h5> -->
+        <button type="button" class="close-icon" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
       </div>
       <div class="offcanvas-body">
        
         <p><a routerLink="/"  routerLinkActive="active"   data-bs-dismiss="offcanvas" >Home</a></p>
-        <p class="d-inline-flex gap-1 group">
-          <a class="service_col" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" >Services <span><i class="bi bi-caret-right-fill icon"></i></span></a>
-          
+        <p class="d-inline-flex user-collapse"  gap-1 group data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+          <a class="service_col" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" >Services</a>
+          <span><a data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-chevron-down"></i></a></span>
         </p>
         <div class="row">
           <div class="col">
             <div class="collapse multi-collapse" id="multiCollapseExample1">
               <div class="card card-body">
-                <a routerLink="" routerLinkActive="active" data-bs-dismiss="offcanvas" >Water Proofing</a>
+                <a class="collapse_link" routerLink="" routerLinkActive="active" data-bs-dismiss="offcanvas" >Waterproofing</a>
+                <a class="collapse_link" routerLink="" routerLinkActive="active" data-bs-dismiss="offcanvas" >Waterproofing</a>
+
+                <a class="collapse_link" routerLink="" routerLinkActive="active" data-bs-dismiss="offcanvas" >Waterproofing</a>
+
+                <a class="collapse_link" routerLink="" routerLinkActive="active" data-bs-dismiss="offcanvas" >Waterproofing</a>
+
                 
               </div>
-              <div class="card card-body">
-                <a routerLink="" routerLinkActive="active" data-bs-dismiss="offcanvas">Corrosion Treatments</a>
-              </div>
+             
             </div>
           </div>
       </div>
-      <p><a routerLink="/about-us" routerLinkActive="active" data-bs-dismiss="offcanvas">About Us</a></p>
+
+      <p class="d-inline-flex user-collapse"  gap-1 group data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">
+        <a class="service_col" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2" >Products</a>
+        <span><a data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample"><i class="bi bi-chevron-down"></i></a></span>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              <a class="collapse_link" routerLink="" routerLinkActive="active" data-bs-dismiss="offcanvas" >Waterproofing</a>
+              <a class="collapse_link" routerLink="" routerLinkActive="active" data-bs-dismiss="offcanvas" >Waterproofing</a>
+
+              <a class="collapse_link" routerLink="" routerLinkActive="active" data-bs-dismiss="offcanvas" >Waterproofing</a>
+
+              <a class="collapse_link" routerLink="" routerLinkActive="active" data-bs-dismiss="offcanvas" >Waterproofing</a>
+
+              
+            </div>
+           
+          </div>
+        </div>
+    </div>
+
+    
+
+      <p class="d-inline-flex user-collapse  gap-1 group" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">
+        <a class="service_col" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3" >Resources</a>
+        <span><a data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3"><i class="bi bi-chevron-down"></i></a></span>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample3">
+            <div class="card card-body">
+              <a class="collapse_link" routerLink="" routerLinkActive="active" data-bs-dismiss="offcanvas" >Blog</a>
+              <a class="collapse_link" routerLink="" routerLinkActive="active" data-bs-dismiss="offcanvas" >News & Events</a>
+
+              <a class="collapse_link" routerLink="" routerLinkActive="active" data-bs-dismiss="offcanvas" >How to Videos</a>
+
+
+              
+            </div>
+           
+          </div>
+        </div>
+    </div>
+      
+
+         
+       
+      
+      <p><a routerLink="" routerLinkActive="active" data-bs-dismiss="offcanvas">Franchise</a></p>
+      <p><a routerLink="" routerLinkActive="active" data-bs-dismiss="offcanvas">Stores</a></p>
+
 
       <p class="last_menu"><a class="navigate" routerLinkActive="active" data-bs-dismiss="offcanvas" routerLink="/contact-us">Contact Us</a></p>
     
     </div>
     </div>
    
-
-                
+</div>
+</div>
+</div>
         </div>
-    </div>
-</div>
-</div>
+    
 

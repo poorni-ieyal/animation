@@ -1,0 +1,25 @@
+
+
+<div class="marquee-container" [@marquee]="{}">
+    <div class="marquee-content">
+        <ng-container *ngFor="let slide of slides; let i = index">
+            <div class="slides" [ngClass]="{'highlight': i == 1}">
+                <h5>{{ slide.count }}</h5>
+                <p [innerHTML]="slide.text"></p>
+            </div>
+        </ng-container>
+    
+  </div>
+
+<!-- <swiper
+[config]="config"
+(swiper)="onSwiper($event)"
+(slideChange)="onSlideChange()"
+>
+<ng-template swiperSlide>Slide 1</ng-template>
+<ng-template swiperSlide>Slide 2</ng-template>
+<ng-template swiperSlide>Slide 3</ng-template>
+<ng-template swiperSlide>Slide 4</ng-template>
+<ng-template swiperSlide>Slide 5</ng-template>
+<ng-template swiperSlide>Slide 6</ng-template>
+</swiper> -->
