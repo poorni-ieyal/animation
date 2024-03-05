@@ -6,6 +6,7 @@ import { CalculateComponent } from 'src/app/blocks/calculate/calculate.component
 import { BillComponent } from 'src/app/blocks/bill/bill.component';
 import { VideoPlayerComponent } from 'src/app/blocks/video-player/video-player.component';
 import { SliderComponent } from 'src/app/blocks/slider/slider.component';
+import { ProductIntroComponent } from 'src/app/blocks/product-intro/product-intro.component';
 
 @Component({
   selector: 'app-home',
@@ -18,6 +19,7 @@ import { SliderComponent } from 'src/app/blocks/slider/slider.component';
     CalculateComponent,
     BillComponent,
     VideoPlayerComponent,
+    ProductIntroComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],

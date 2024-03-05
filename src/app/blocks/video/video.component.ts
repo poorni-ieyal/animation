@@ -1,5 +1,6 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-video',
@@ -9,51 +10,29 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./video.component.css']
 })
 export class VideoComponent {
-  @ViewChild('videoPlayer')
-  videoPlayer!: ElementRef;
+  youtubeUrl:any= this.transform('https://www.youtube.com/embed/iB4n75bvxY4?autoplay=0&mute=1')
 
-  isScrolled: boolean = false;
+  constructor(private dom:DomSanitizer){}
+  transform(value: string) {
+    return this.dom.bypassSecurityTrustResourceUrl(value);
+  }
 
-  @HostListener('window:scroll', [])
+  openVideo(){
+    this.youtubeUrl = this.transform('https://www.youtube.com/embed/iB4n75bvxY4?autoplay=1&mute=1')
+  }
+
+  closeVideo(){
+    this.youtubeUrl = this.transform('https://www.youtube.com/embed/iB4n75bvxY4?autoplay=0&mute=1')
+
+  }
+ 
+  }
  
 
-  onWindowScroll() {
-    const threshold = 200; // Example threshold for changing background color
-    if (window.pageYOffset > threshold) {
-      // Change background color when scrolled past threshold
-      document.body.style.backgroundColor = 'black';
-      document.documentElement.style.setProperty(
-        "--text-color",
-        "#fff"
-      );
-    } else {
-      // Revert to original background color when not scrolled past threshold
-      document.body.style.backgroundColor = 'white';
-      document.documentElement.style.setProperty(
-        "--text-color",
-        "#000"
-      );
-    }
-  }
 
-  play() {
-    this.videoPlayer.nativeElement.play();
-  }
 
-  pause() {
-    this.videoPlayer.nativeElement.pause();
-  }
+  
 
-  toggleMute() {
-    this.videoPlayer.nativeElement.muted = !this.videoPlayer.nativeElement.muted;
-  }
-
-  // playVideo(){
-  //   const youtubeLink = 'https://www.youtube.com/watch?v=H77P44Ki6QY&t=4s';
-  //   window.open(youtubeLink);
-
-  // }
-}
 
 
 

@@ -14,14 +14,14 @@
   background: var(--header-background);
   border: 2px solid #ffab40;
   border-radius: 10px;
- 
+  padding: 0 30px;
 }
 .main {
   padding-top: 30px;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 999;
   background-color: var(--header-font-color);
 }
 /* .main{
@@ -57,9 +57,9 @@
 }
 .reg-button {
   background: var(--button-background);
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border-radius: 25px;
-opacity: 1;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 25px;
+  opacity: 1;
   color: var(--primaryColor);
   font-size: 14px;
   font-family: var(--font-regularr);
@@ -83,13 +83,14 @@ opacity: 1;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 999;
+    background: white;
   }
   .left {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
- 
 }
 
 /* Responsive Desktop*/
@@ -103,89 +104,88 @@ opacity: 1;
 }
 
 /* Responsive mobile */
-@media only screen and (max-width:991px){
-    .menu {
-        border: none;
-        font-size: 30px;
-        background: transparent;
-        color: var(--header-font-color);
-      }
-      .offcanvas {
-        width: 100%;
-        height: 100%;
-        background: #FC8D2D;
-        z-index: 9999;
-      }
-      .close-icon {
-        color: var(--header-font-color) !important;
-        font-size: 30px;
-        padding: 0px;
-        border: none;
-        background: none;
-        float: right;
-      }
-      .offcanvas-header img {
-        width: 130px;
-        height: auto;
-      }
-      .offcanvas-header {
-        background-color: var(--header-background);
-        display: block;
-        padding-bottom: 0;
-      }
-      .offcanvas-body p {
-        width: 100%;
-        padding: 10px;
-        margin: 0;
-        color: var(--header-font-color);
-      }
-      .offcanvas-body a {
-        text-decoration: none;
-        color: var(--header-font-color);
-        font-size: 20px;
-        font-family: var(--font-mediumm);
-      }
-      .offcanvas-body{
-        padding-top: 0;
-      }
-      .right {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-      }
-      .icon {
-        font-size: 20px;
-        color: var(--header-font-color);
-      }
-      .left{
-        background: #FC8D2D;
-        margin-top: 15px;
-        border-radius: 9px;
-        display: flex;
+@media only screen and (max-width: 991px) {
+  .menu {
+    border: none;
+    font-size: 30px;
+    background: transparent;
+    color: var(--header-font-color);
+  }
+  .offcanvas {
+    width: 100%;
+    height: 100%;
+    background: var(--canvas-background);
+    z-index: 9999;
+  }
+  .close-icon {
+    color: var(--header-font-color) !important;
+    font-size: 30px;
+    padding: 0px;
+    border: none;
+    background: none;
+    float: right;
+  }
+  .offcanvas-header img {
+    width: 130px;
+    height: auto;
+  }
+  .offcanvas-header {
+    background-color: var(--header-background);
+    display: block;
+    padding-bottom: 0;
+  }
+  .offcanvas-body p {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    color: var(--header-font-color);
+  }
+  .offcanvas-body a {
+    text-decoration: none;
+    color: var(--header-font-color);
+    font-size: 20px;
+    font-family: var(--font-mediumm);
+  }
+  .offcanvas-body {
+    padding-top: 0;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 30px;
+  }
+  .icon {
+    font-size: 20px;
+    color: var(--header-font-color);
+  }
+  .left {
+    background: var(--canvas-background);
+    margin-top: 15px;
+    border-radius: 9px;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     /* justify-content: center; */
     height: 60px;
-
-      }
-      .logo_img{
-        margin-left: 10px;
-      }
-     .header-left{
-        padding-left: 10px;
-     }
-     .user-collapse{
-      justify-content: space-between;
-     }
-     .card{
-      border: none;
-      background: none;
-      padding-top: 0;
-     }
-     .collapse_link{
-      border-bottom: 1px solid #fff;
-      padding-bottom: 10px;
-
-     }
-
+    padding-left: 30px;
+  }
+  .logo_img {
+    margin-left: 10px;
+  }
+  .header-left {
+    padding-left: 10px;
+  }
+  .user-collapse {
+    justify-content: space-between;
+  }
+  .card {
+    border: none;
+    background: none;
+    padding-top: 0;
+  }
+  .collapse_link {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+  }
 }

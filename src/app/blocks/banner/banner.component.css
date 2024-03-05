@@ -48,6 +48,7 @@ font-family: var(--font-bold);
   flex-direction: column;
   position: relative;
   height: 2.5rem; /* Adjust according to your design */
+  z-index: -1;
 }
 
 

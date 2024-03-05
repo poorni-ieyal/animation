@@ -1,6 +1,6 @@
 
 
-<div class="marquee-container" [@marquee]="{}">
+<div class="marquee-container container">
     <div class="marquee-content">
         <ng-container *ngFor="let slide of slides; let i = index">
             <div class="slides" [ngClass]="{'highlight': i == 1}">

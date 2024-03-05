@@ -6,7 +6,9 @@
     --button-background:#FFFFFF 0% 0% no-repeat padding-box;;
     --header-background: #FC8D2C 0% 0% no-repeat padding-box;
     --button-gradient:#FC8D2C;
-    --secondary_color:#B5FF7B;
+    --secondary_color:#F0711F;
+    --canvas-background:#FC8D2D;
+    
  
     --font-regular: 'font-regular';
     --font-medium: 'font-medium';
@@ -16,6 +18,7 @@
     --font-mediumm: 'font-mediumm';
     --font-semiboldd: 'font-semiboldd';
     --font-bold: 'font-boldd';
+    --font-light:'font-light';
     --text-color:#000;
     
 }
@@ -55,14 +58,42 @@
     src: url(./assets/fonts/Poppins-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'font-light';
+    src: url(./assets/fonts/Poppins-Light.ttf);
+}
+
 body {
     background-color: #fff !important;
     /* transition: background-color 0.5s ease;  */
     transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition effect for both background color and text color */
   }
   
-  /* body.black-bg {
-    background-color: white;
-    color: white;
-  } */
+  .modal-dialog{
+    width: 100% !important;
+    max-width: 100% !important;
+   height: 100%;
+   margin: 0 !important;
+   padding: 0 40px;
+  } 
+
+  .modal-body{
+    padding: 0 !important;
+    width: calc(100vw - 80px);
+    height: 86vh;
+  }
+
+  .modal{
+    background : var(--header-background);
+  }
   
+  @media only screen and (max-width:991px){
+    .modal-body{
+        height: 50vh !important;
+       }
+        
+       .modal-dialog{
+        padding: 0 10px;
+       }
+  
+  }

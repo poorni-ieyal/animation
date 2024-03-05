@@ -1,0 +1,27 @@
+<div class="container product-intro">
+    <p>Your One-Stop Solution for All Building Needs</p>
+    <h4>From waterproofing to structural strengthening, <br> our experienced team utilises advanced <br> techniques and materials to deliver <br> outstanding results.</h4>
+</div>
+
+<div class="container product">
+    <div class="card">
+    <div class="card-products">
+        <div class="products" (click)="showContent(i)" *ngFor="let product of products; let i= index" [ngClass]="{'highlight-products': selectedIndex == i}" >{{product}} </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6" *ngIf="selectedIndex !== null" >
+            
+            <div class="content">
+            <h3>{{productFeatures[selectedIndex].title}} </h3>
+            <p> {{productFeatures[selectedIndex].description}}</p>
+            <h6>Learn More <span><i class="bi bi-arrow-right icon"></i></span></h6>
+        </div>
+   
+        </div>
+        
+        <div class="col-lg-6">
+
+        </div>
+    </div>
+</div>
+</div>
