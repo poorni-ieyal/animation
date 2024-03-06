@@ -1,0 +1,27 @@
+.content h2{
+    color: var(--mobile-app-text);
+    font-size: 34px;
+    line-height:45px ;
+    font-family: var(--font-semibold);
+}
+.content h6{
+    font-family: var(--font-regular);
+    font-size: 24px;
+    line-height: 35px;
+
+}
+.app{
+    margin-top: 40px;
+}
+
+.card{
+    box-shadow: 0px 10px 99px #F68A2D2C;
+border-radius: 24px;
+background: var(--mobile-app-text);
+}
+
+@media only screen and (max-width:991px){
+    .content{
+        margin-bottom: 25px;
+    }
+}

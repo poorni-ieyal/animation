@@ -60,4 +60,7 @@
   .btn-close{
     right: 0
   }
+  .thumbnail-background {
+    border-radius: 15px;
+  }
 }

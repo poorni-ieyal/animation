@@ -1,6 +1,16 @@
 .banner {
-  margin-top: 70px;
+  /* margin-top: 70px; */
   color: var(--text-color);
+}
+
+.main{
+    background-image: url(../../../assets/images/building-doctor-background.png);
+    height: 110vh;
+    padding-top: 110px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .para{
@@ -48,7 +58,7 @@ font-family: var(--font-bold);
   flex-direction: column;
   position: relative;
   height: 2.5rem; /* Adjust according to your design */
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 
@@ -107,12 +117,12 @@ font-family: var(--font-bold);
 .banner-content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-start;
+    margin-top: 80px;
+    padding-left: 50px;
 }
 
-.main{
-    margin-top: 110px;
-}
+
 
 
 /* mobile banner responsive */
@@ -127,6 +137,17 @@ font-family: var(--font-bold);
       display: block;
       text-align: center;
       width: 100%;
+    }
+    .image{
+        display: none;
+    }
+    .main{
+        height: 80vh;
+        background-position: right;
+    }
+    .banner-content{
+        padding-left: 16px;
+        margin-top: 0;
     }
     
 

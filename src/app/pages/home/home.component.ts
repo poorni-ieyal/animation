@@ -7,6 +7,8 @@ import { BillComponent } from 'src/app/blocks/bill/bill.component';
 import { VideoPlayerComponent } from 'src/app/blocks/video-player/video-player.component';
 import { SliderComponent } from 'src/app/blocks/slider/slider.component';
 import { ProductIntroComponent } from 'src/app/blocks/product-intro/product-intro.component';
+import { MobileAppComponent } from 'src/app/blocks/mobile-app/mobile-app.component';
+import { FaqComponent } from 'src/app/blocks/faq/faq.component';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +21,9 @@ import { ProductIntroComponent } from 'src/app/blocks/product-intro/product-intr
     CalculateComponent,
     BillComponent,
     VideoPlayerComponent,
-    ProductIntroComponent
+    ProductIntroComponent,
+    MobileAppComponent,
+    FaqComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],

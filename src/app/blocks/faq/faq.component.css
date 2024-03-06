@@ -1,0 +1,23 @@
+.main{
+    margin-top: 40px;
+}
+.content p{
+color: #FC8D2B;
+font-family: var(--font-bold);
+font-size: 24px;
+line-height: 50px;
+}
+
+.content h5{
+    font-family: var(--font-regular);
+    font-size: 30px;
+    line-height: 45px;
+    color: var(--primaryColor);
+}
+
+.accordion-button {
+background:#FC8D2B !important ;
+color: var(--header-font-color) !important;
+font-size: 16px;
+font-family: var(--font-medium);
+}

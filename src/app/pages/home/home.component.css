@@ -1,0 +1,12 @@
+.combine-div{
+    position: relative;
+    bottom: 300px;
+    width: 100%;
+}
+
+/* Responsive */
+@media only screen and (max-width:991px){
+    .combine-div{
+        bottom: 228px;
+    }
+}

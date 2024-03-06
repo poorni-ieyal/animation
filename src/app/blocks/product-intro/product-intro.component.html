@@ -1,22 +1,27 @@
 <div class="container product-intro">
     <p>Your One-Stop Solution for All Building Needs</p>
-    <h4>From waterproofing to structural strengthening, <br> our experienced team utilises advanced <br> techniques and materials to deliver <br> outstanding results.</h4>
+    <h4>
+        From waterproofing to structural strengthening, <br />
+        our experienced team utilises advanced <br />
+        techniques and materials to deliver <br />
+        outstanding results.
+    </h4>
 </div>
 
-<div class="container product">
+<!-- <div class="container product">
     <div class="card">
     <div class="card-products">
         <div class="products" (click)="showContent(i)" *ngFor="let product of products; let i= index" [ngClass]="{'highlight-products': selectedIndex == i}" >{{product}} </div>
     </div>
     <div class="row">
         <div class="col-lg-6" *ngIf="selectedIndex !== null" >
-            
+            <ng-container *ngFor="let features of productFeatures">
             <div class="content">
             <h3>{{productFeatures[selectedIndex].title}} </h3>
-            <p> {{productFeatures[selectedIndex].description}}</p>
+            <p> {{productFeatures[selectedIndex].description}} </p>
             <h6>Learn More <span><i class="bi bi-arrow-right icon"></i></span></h6>
         </div>
-   
+    </ng-container>
         </div>
         
         <div class="col-lg-6">
@@ -24,4 +29,43 @@
         </div>
     </div>
 </div>
+</div> -->
+
+<div class="container product">
+    <div class="card" *ngFor="let features of productFeatures; let i = index" [ngClass]="{  card4: i % 2 == 1 }">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="content">
+                    <h3>{{ features.title }}</h3>
+                    <h5>{{features.subHeading}} </h5>
+                    <ul>
+                        <li>
+                            <p>{{features.description}}</p>
+                        </li>
+                        <li>
+                            <p>{{features.point1}}</p>
+                        </li>
+                        <li>
+                            <p>{{features.point2}}</p>
+                        </li>
+                        <li>
+                            <p>{{features.point3}}</p>
+                        </li>
+                        <li *ngIf=" features.point4!= ''">
+                            <p>{{features.point4}}</p>
+                        </li>
+                    </ul>
+                    <h6 [ngClass]="{'card4': i == 3}">
+                        Learn More <span><i class="bi bi-arrow-right icon"></i></span>
+                    </h6>
+                </div>
+            </div>
+            <div class="col-lg-6"></div>
+        </div>
+    </div>
+</div>
+
+<div class="center-button">
+    <button class="view">View More</button>
+
 </div>

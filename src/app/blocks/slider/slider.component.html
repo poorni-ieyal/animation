@@ -3,7 +3,7 @@
 <div class="marquee-container container">
     <div class="marquee-content">
         <ng-container *ngFor="let slide of slides; let i = index">
-            <div class="slides" [ngClass]="{'highlight': i == 1}">
+            <div class="slides">
                 <h5>{{ slide.count }}</h5>
                 <p [innerHTML]="slide.text"></p>
             </div>
