@@ -105,5 +105,13 @@ body {
        .modal-dialog{
         padding: 0 10px;
        }
+
+       .card-story h2 br{
+        display: none;
+      }
+
+      .testimonial-content h5 br{
+        display: none;
+      }
   
   }

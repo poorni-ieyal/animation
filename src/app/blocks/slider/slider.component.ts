@@ -32,7 +32,7 @@ export class SliderComponent implements OnInit {
 
  
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    // throw new Error('Method not implemented.');
   }
   slides: any = [
     { count: '10K+', text: 'Years of <br> Excellence' },

@@ -1,0 +1,22 @@
+<div class="container main">
+    <h3>Happy Customers, Happy Homes..</h3>
+    <swiper class="swiper-main" [config]="config">
+        <ng-template swiperSlide *ngFor="let testimonial of testimonials">
+            <div class="testimonial">
+                <div class="cards">
+                    <div class="image">
+                        <img [src]="testimonial.profileImg" alt="testimonial image" />
+                    </div>
+                    <div class="testimonial-content">
+                        <img class="testimonialIcon" [src]="testimonial.testimonialIcon" alt="testimonial icon" />
+                        <h5 [innerHTML]="testimonial.feedback"></h5>
+                        <p>{{ testimonial.name }}</p>
+                        <div class="">
+                            <img [src]="testimonial.rating" *ngFor="let star of [].constructor(5)" alt="rating" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </swiper>
+</div>

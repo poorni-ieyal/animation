@@ -57,7 +57,7 @@ export class BannerComponent {
       element.classList.remove('show');
     });
     // Show the text string at the specified index
-    document.querySelectorAll('.text')[index].classList.add('show');
+    document.querySelectorAll('.text')[index]?.classList.add('show');
   }
 }
 

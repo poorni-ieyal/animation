@@ -44,7 +44,7 @@
 
 .header h6 {
   font-size: 16px;
-  font-family: var(--font-mediumm);
+  font-family: var(--font-medium);
   margin-bottom: 0;
 }
 
@@ -62,7 +62,7 @@
   opacity: 1;
   color: var(--primaryColor);
   font-size: 14px;
-  font-family: var(--font-regularr);
+  font-family: var(--font-regular);
   padding: 12px 24px;
   border: none;
 }
@@ -144,7 +144,7 @@
     text-decoration: none;
     color: var(--header-font-color);
     font-size: 20px;
-    font-family: var(--font-mediumm);
+    font-family: var(--font-medium);
   }
   .offcanvas-body {
     padding-top: 0;

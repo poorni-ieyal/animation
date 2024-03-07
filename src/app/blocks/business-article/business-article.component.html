@@ -1,0 +1,21 @@
+<div class="container main">
+<swiper class="swiper-main" [config]="config">
+  <ng-template swiperSlide *ngFor="let yourStory of stories" >
+    <div class="story">
+      <div class="card-story" >
+        <img class="your-story-img" [src]="yourStory.img" alt="your-story icon" />
+        <h2 [innerHTML]="yourStory.content"></h2>
+        <p>
+          {{ yourStory.read }}
+          <span><img [src]="yourStory.icon" alt="arrow-icon" /></span>
+        </p>
+      </div>
+    </div>
+  </ng-template>
+</swiper>
+</div>
+
+<div class="center-button">
+    <button class="view">View More</button>
+
+</div>

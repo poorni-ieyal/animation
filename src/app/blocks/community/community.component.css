@@ -1,0 +1,168 @@
+.community-main{
+    margin-top: 40px;
+    padding-left: 0;
+}
+
+.cards{
+    /* display: flex;  
+    gap: 20px;  */
+    margin: 0;
+}
+.community-img{
+    max-width: 100%;
+    /* width: 520px; */
+    height: auto;
+}
+
+.view{
+    background: var(--button-gradient);
+    padding: 10px 30px;
+    color: var(--header-font-color);
+    font-size: 16px;
+    font-family: var(--font-semibold);
+    border: none;
+    border-radius: 30px;
+  }
+
+  .join{
+    background: var(--button-gradient);
+    color: var(--header-font-color);
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  .join h4{
+    font-size: 30px;
+    line-height: 40px;
+    font-family: var(--font-semibold);
+    color: var(--header-font-color);
+    margin: 0;
+    
+  }
+
+  .join p{
+    font-size: 16px;
+    line-height: 28px;
+    font-family: var(--font-regular);
+    color: var(--header-font-color);
+    margin: 0;
+    
+  }
+
+  .reg-button {
+    background: var(--button-background);
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    opacity: 1;
+    color: var(--primaryColor);
+    font-size: 14px;
+    font-family: var(--font-semibold);
+    padding: 12px 24px;
+    border: none;
+  }
+
+  .pad-l-0{
+    padding-left: 0;
+  }
+
+  .pad-r-0{
+    padding-right: 0;
+  }
+
+  .button-format{
+    display: flex;
+    justify-content: center;
+  }
+
+  .detail, .social{
+    background-color: #F5F5F7;
+    border-radius: 15px;
+    padding: 30px 20px;
+
+  }
+
+  .contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .detail h5{
+    font-size: 30px;
+    line-height: 40px;
+    font-family: var(--font-semibold);
+    color: var(--primaryColor);
+
+  }
+
+  .detail, .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .detail h6{
+    font-size: 16px;
+    line-height: 28px;
+    font-family: var(--font-regular);
+    color: var(--primaryColor);
+  }
+
+  .whatsapp{
+    width: 30px;
+    height: auto;
+    padding-right: 2px;
+  }
+
+  .social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .social-icons img{
+    width: 30px;
+    height: auto;
+  }
+
+  .social h3{
+    font-size: 30px;
+    line-height: 40px;
+    font-family: var(--font-semibold);
+    color: var(--primaryColor);
+    text-align: center;
+  }
+
+  .community-icon{
+    width: 30px;
+  }
+
+  @media only screen and (max-width:991px){
+    .pad-l-0 {
+       padding-left: 16px;
+      }
+
+      .pad-r-0{
+        padding-right: 0;
+      }
+
+      .community-main{
+        padding: 0px;
+      }
+      .join{
+        margin-bottom: 20px;
+      }
+
+    
+     
+    
+  }
+
