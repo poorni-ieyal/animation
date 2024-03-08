@@ -1,0 +1,14 @@
+<div class="franchise-model-main">
+    <div class="container content">
+        <h2>World’s First Franchise Model <br> Building Repairing Brand</h2>
+        <div class="row">
+            <div class="col-lg-4 " *ngFor="let franchise of franchisee">
+                <div class="card-content">
+                <img class="franchise-icon" [src]="franchise.franchiseIcon" alt="double-tick-icon">
+                <h6>{{franchise.heading}} </h6>
+                <p [innerHTML]="franchise.description"></p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -23,3 +23,9 @@ export interface testimonials {
     name:string,
     rating:string
 }
+
+export interface  franchise{
+    franchiseIcon:string,
+    heading:string,
+    description:string 
+}
