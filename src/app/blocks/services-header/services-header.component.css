@@ -1,0 +1,82 @@
+.apply-main{
+    margin-top: 160px;
+}
+
+.content h6{
+    font-size: 16px;
+    line-height: 25px;
+    font-family: var(--font-regular);
+}
+
+.features{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+   
+
+.content h5{
+    background-color: #FFC18B;
+    font-size: 12px;
+    font-family: var(--font-regular);
+    border-radius: 15px;
+    padding: 7px 23px;
+}
+
+.content h2{
+    font-size: 36px;
+    line-height: 55px;
+    font-family: var(--font-bold);
+
+}
+
+.content p{
+    font-size: 16px;
+    font-family: var(--font-medium);
+    line-height: 25px;
+}
+
+.content p,.content h2, .content h5, .content h6{
+    text-align: center;
+    color: var(--primaryColor);
+}
+
+.view{
+    background: var(--button-gradient);
+    padding: 10px 30px;
+    color: var(--header-font-color);
+    font-size: 16px;
+    font-family: var(--font-semibold);
+    border: none;
+    border-radius: 30px;
+  }
+
+  .center-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tick-icon{
+    padding-right: 5px;
+  }
+
+  /* Responsive */
+@media only screen and (max-width:600px){
+     .features{
+        flex-direction: column;
+       
+        align-items: center;
+    } 
+}
+
+@media only screen and (max-width : 991px){
+    .apply-main{
+        margin-top: 120px;
+    }
+     
+    .content h2{
+        font-size: 24px;
+    line-height: 35px;
+    }
+}

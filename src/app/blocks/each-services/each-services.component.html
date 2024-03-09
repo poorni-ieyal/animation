@@ -1,0 +1,35 @@
+
+<div class="container product">
+    <h2>Our Services</h2>
+    <div class="card" *ngFor="let features of productFeatures; let i = index" [ngClass]="{  card4: i % 2 == 1 }">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="content">
+                    <h3>{{ features.title }}</h3>
+                    <h5>{{features.subHeading}} </h5>
+                    <ul>
+                        <li>
+                            <p>{{features.description}}</p>
+                        </li>
+                        <li>
+                            <p>{{features.point1}}</p>
+                        </li>
+                        <li>
+                            <p>{{features.point2}}</p>
+                        </li>
+                        <li>
+                            <p>{{features.point3}}</p>
+                        </li>
+                        <li *ngIf=" features.point4!= ''">
+                            <p>{{features.point4}}</p>
+                        </li>
+                    </ul>
+                    <h6 [ngClass]="{'card4': i == 3}">
+                        Learn More <span><i class="bi bi-arrow-right icon"></i></span>
+                    </h6>
+                </div>
+            </div>
+            <div class="col-lg-6"></div>
+        </div>
+    </div>
+</div>
