@@ -12,13 +12,17 @@ import { BusinessArticleComponent } from 'src/app/blocks/business-article/busine
 import { TestimonialsComponent } from 'src/app/blocks/testimonials/testimonials.component';
 import { FranchiseSectionComponent } from 'src/app/blocks/franchise-section/franchise-section.component';
 import { CommunityComponent } from 'src/app/blocks/community/community.component';
+import { NewBannerComponent } from 'src/app/blocks/new-banner/new-banner.component';
+import { SpecialitiesComponent } from 'src/app/blocks/specialities/specialities.component';
+import { BlogComponent } from 'src/app/blocks/blog/blog.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
     CommonModule,
-    BannerComponent,
+    NewBannerComponent,
+    SpecialitiesComponent,
     SliderComponent,
     VideoComponent,
     ProductIntroComponent,
@@ -28,10 +32,17 @@ import { CommunityComponent } from 'src/app/blocks/community/community.component
     BusinessArticleComponent,
     TestimonialsComponent,
     FranchiseSectionComponent,
+    BlogComponent,
     FaqComponent,
     CommunityComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
-export class HomeComponent {}
+export class HomeComponent {
+  ngOnInit() {
+    
+    window.scroll(0, 0);
+  
+}
+}

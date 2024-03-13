@@ -1,0 +1,17 @@
+<div class="container special-main">
+    <h6>Delivering Results That Matter</h6>
+    <h2>We take pride in our proven track record and <br> unmatched expertise.</h2>
+        <div class="row">
+            <ng-container *ngFor="let slide of slides; let i = index">
+            <div class="col-lg-3 col-md-6">
+        <div class="content">
+                <div class="slides">
+                    <img [src]="slide.count" alt="speciality about BD">
+                    <p [innerHTML]="slide.text"></p>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+    </div>
+</div>
+

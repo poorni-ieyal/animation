@@ -1,0 +1,11 @@
+.blog-main{
+    margin-top: 40px;
+}
+
+.blog-main h3{
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 34px;
+    line-height: 45px;
+    font-family: var(--font-bold);
+}

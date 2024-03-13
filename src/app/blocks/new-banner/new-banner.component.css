@@ -1,0 +1,206 @@
+.banner{
+    background-image: url(../../../assets/images/banner-background.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+
+}
+
+.banner-main{
+    margin-top: 135px;
+    height: 70vh;
+}
+
+.banner-row{
+    height: 100%;
+}
+
+.banner-left{
+    padding: 70px;
+}
+
+.banner-left h6{
+    font-size: 16px;
+    font-family: var(--font-medium);
+    line-height: 25px;
+    color: var(--header-font-color);
+}
+
+
+.banner-right{
+    position: relative;
+    bottom: 0;
+}
+.banner-right img{
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+}
+.gap-div{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.gap-div h1{
+    font-size: 42px;
+    font-family: var(--font-bold);
+    line-height: 55px;
+    color: var(--header-font-color);
+}
+
+.para{
+    font-size: 16px;
+    font-family: var(--font-regular);
+    color: var(--header-font-color);
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 2.5rem; /* Adjust according to your design */
+    /* z-index: -1; */
+  }
+  
+  .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Smooth transition effect */
+    color: #FC8D2C;
+    font-family: var(--font-bold);
+    /* text-align: center; */
+  }
+
+  .text.show {
+    opacity: 1;
+    text-align: center;
+  }
+
+  .gradient-btn{
+    background: var(--button-gradient);
+    border-radius: 25px;
+    color: var(--header-font-color);
+    font-size: 16px;
+    font-family: var(--font-medium);
+    opacity: 1;
+    padding: 12px 40px;
+    border: none;
+}
+
+.btn-common{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.iso-text h6{
+    font-size: 16px;
+    line-height: 25px;
+    font-family: var(--font-semibold);
+    color: var(--header-font-color);
+   padding: 40px 70px 0px;
+}
+
+  /*  responsive */
+
+
+@media only screen and (min-width:1400px){
+    .banner-main{
+        height: 55vh;
+    }
+}
+
+@media only screen and (max-width:991px){
+    .banner-main{
+        margin-top: 95px;
+    }
+    .text{
+        display: block;
+        text-align: center;
+        width: 100%;
+      }
+
+    .banner-left{
+        padding: 20px 10px;
+    }
+
+    .gap-div h1{
+        font-size: 30px;
+        line-height: 45px;
+        text-align: center;
+    }
+    .para, .banner-left h6{
+        text-align: center;
+    }
+    .btn-common{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+    .banner-right img{
+        position: relative;
+    }
+    .iso-text h6{
+        padding: 0px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .banner{
+        border-radius: 10px;
+    }
+
+    
+}
+
+@media only screen and (max-width:768px){
+    .banner-left h6{
+        font-size: 15px;
+    }
+    .btn-common{
+        flex-direction: column;
+    }
+    .banner-right img{
+        width: 300px;
+        position: absolute;
+        bottom: 0;
+        right: 30px;
+    }
+
+}
+
+@media only screen and (max-width : 320px){
+    .banner-right img{
+        width: 230px;
+    }
+    .banner-main{
+        height: 82vh;
+    }
+    .gap-div h1{
+        font-size: 26px;
+    }
+}
+
+@media (min-width:321px) and (max-width : 424px){
+    .banner-main{
+        height: 86vh;
+    }
+}
+
+@media (min-width:425px) and (max-width : 991px){
+    .banner-main{
+        height: 80vh;
+    }
+}
+
+@media (min-width:992px) and (max-width:1250px){
+    .banner-right img {
+        position: absolute;
+        right: -22px;
+        bottom: 0;
+    }
+}
+

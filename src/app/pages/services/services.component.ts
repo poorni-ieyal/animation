@@ -12,4 +12,9 @@ import { ServicesHeaderComponent } from 'src/app/blocks/services-header/services
   styleUrls: ['./services.component.css']
 })
 export class ServicesComponent {
+  ngOnInit() {
+    
+    window.scroll(0, 0);
+  
+}
 }

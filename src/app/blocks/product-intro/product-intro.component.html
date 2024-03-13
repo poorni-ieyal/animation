@@ -32,10 +32,14 @@
 </div> -->
 
 <div class="container product">
+    
     <div class="card" *ngFor="let features of productFeatures; let i = index" [ngClass]="{  card4: i % 2 == 1 }">
         <div class="row">
             <div class="col-lg-6">
                 <div class="content">
+                    <div class="" [ngClass]="{'highlight-products': i % 2 == 0, 'products': i % 2 == 1}" >
+                        {{features.service}}
+                    </div>
                     <h3>{{ features.title }}</h3>
                     <h5>{{features.subHeading}} </h5>
                     <ul>
@@ -55,12 +59,14 @@
                             <p>{{features.point4}}</p>
                         </li>
                     </ul>
-                    <h6 [ngClass]="{'card4': i == 3}">
-                        Learn More <span><i class="bi bi-arrow-right icon"></i></span>
-                    </h6>
+                    <h6>Learn More <span><img class="arrow-icon" [src]="i % 2 == 0 ? './assets/icons/arrow-icon.png' : './assets/icons/white-arrow-icon.png'" alt=""></span></h6>    
+
+                    <!-- <h6 [ngClass]="{'card4': i == 3}"> Learn More <span><i class="bi bi-arrow-right icon"></i></span></h6> -->
                 </div>
             </div>
-            <div class="col-lg-6"></div>
+            <div class="col-lg-6 image">
+                <img src="../../../assets/images/service.png" alt="services">
+            </div>
         </div>
     </div>
 </div>

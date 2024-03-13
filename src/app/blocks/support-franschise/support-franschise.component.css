@@ -1,0 +1,36 @@
+.support-main{
+    margin-top: 40px;
+}
+.image img{
+    max-width: 100%;
+}
+
+.content h4{
+    color: var(--franchise-background);
+    font-family:var(--font-bold);
+    font-size: 32px; 
+
+}
+
+.content p{
+    color: var(--primaryColor);
+    font-size: 22px;
+    font-family: var(--font-regular);
+    line-height: 40px;
+}
+
+@media only screen and (max-width:991px){
+    .image{
+        margin-bottom: 20px;
+    }
+    .content h4{
+        font-size: 24px;
+    }
+    .content p{
+        font-size: 18px;
+    }
+
+    .content p br{
+        display: none;
+    }
+}

@@ -17,6 +17,7 @@
   line-height: 35px;
   color: var(--primaryColor);
   margin-bottom: 0;
+  text-align: left;
 }
 
 .card-content p {
@@ -24,30 +25,66 @@
   line-height: 24px;
   color: var(--primaryColor);
   font-family: var(--font-regular);
-  text-align: center;
+  text-align: left;
   margin-bottom: 0;
 }
 
 .franchise-icon {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: var(--header-background);
-  padding: 15px;
+  height: 100%;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px */
+    /* border-radius: 10px; */
 }
 
 .card-content {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 1px 10px #fc8d2b7b;
-  border-radius: 10px;
-  padding: 20px;
+  justify-content: center; */
+  /* align-items: center; */
   margin-bottom: 20px;
   gap: 15px;
-  /* height: 100%; */
+  height: 100%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  padding: 10px 15px 0px;
+}
+
+.card-col{
+  margin-bottom: 20px;
+  
+}
+
+.inner-card{
+  height: 100%;
+}
+
+.image img{
+  width: 100px;
+  height: 100px;
+}
+
+/* .card-content1{
+  width: 400px;
+  height: 100px;
+} */
+
+
+
+.card-column{
+  margin-top: 20px;
+  display: flex;
+  height: 20vh;
+  padding: 10px 20px;
+
+}
+.content br{
+  display: none;
+}
+
+.content h6, .content p{
+  margin-bottom: 0;
 }
 
 /* Responsive */
@@ -72,5 +109,21 @@
     font-size: 25px;
     line-height: 40px;
   }
+
+}
+
+/* Responsive */
+@media only screen and (min-width:768px){
+  .franchise-icon{
+     border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px
+  }
+
+  .card-content{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+
 
 }

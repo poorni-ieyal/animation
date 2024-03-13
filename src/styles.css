@@ -10,6 +10,7 @@
     --canvas-background:#FC8D2D;
     --mobile-app-text: #FF8326;
     --franchise-background:#FC8D2B;
+    --header-new-bg:#DA611B;
     
  
     --font-regular: 'font-regular';
@@ -70,6 +71,14 @@ body {
     /* transition: background-color 0.5s ease;  */
     transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition effect for both background color and text color */
   }
+
+  body::-webkit-scrollbar {
+    display: none; /* WebKit */
+}
+
+html,body{
+    scroll-behavior: auto !important;
+}
   
   .modal-dialog{
     width: 100% !important;

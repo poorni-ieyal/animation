@@ -1,5 +1,5 @@
 export interface productFeatures {
-   
+   service:string,
     title: string,
     subHeading: string,
     description:string,
@@ -28,4 +28,10 @@ export interface  franchise{
     franchiseIcon:string,
     heading:string,
     description:string 
+}
+
+export interface adMarketing{
+    adImage:string,
+    title:string,
+    alt:string
 }

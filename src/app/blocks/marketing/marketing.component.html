@@ -1,0 +1,21 @@
+<div class="container main">
+    <h3>Building Doctor’s comprehensive <br> 360-degree marketing support</h3>
+    <swiper class="swiper-main" [config]="config">
+        <ng-template swiperSlide *ngFor="let ad of ads">
+            <div class="marketing">
+                <div class="cards">
+                    <img [src]="ad.adImage" [alt]="ad.alt">
+                    <div class="promote-title">
+                        <h6>{{ad.title}} </h6>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </swiper>
+</div>
+
+
+
+
+
+

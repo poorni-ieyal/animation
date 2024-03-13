@@ -124,6 +124,10 @@
       justify-content: center;
       align-items: center;
     }
+
+    .arrow-icon{
+      width: 30px;
+    }
   
   
   
@@ -149,8 +153,6 @@
     .product-intro{
       margin-top: -200px;
     }
-  
-   
     
   }
   
@@ -160,5 +162,9 @@
   .card{
     top: 40px;
     /* height: calc(100vh - 150px); */
+  }
+
+  .product{
+    margin-bottom: 60px;
   }
   }

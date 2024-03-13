@@ -21,7 +21,18 @@ export class ProductIntroComponent {
 
   productFeatures: productFeatures[] = [
     {
-      
+      service:'Water proofing',
+      title:
+        'Safeguard Your Concrete: Building Doctor Admixtures',
+        subHeading:'Unlock superior concrete performance with Building Doctor\'s innovative admixture solutions. ',
+      description:'Make your concrete stronger and longer lasting.',
+        point1:'Pour and smooth concrete easier.',
+        point2:'Say goodbye to cracks and water leaks.',
+        point3:'Finish your projects faster.',
+        point4 :'Get the confidence you deserve in your concrete'
+    },
+    {
+      service:'Admixtures',
       title:
         'Safeguard Your Concrete: Building Doctor Admixtures',
         subHeading:'Unlock superior concrete performance with Building Doctor\'s innovative admixture solutions. ',
@@ -33,7 +44,7 @@ export class ProductIntroComponent {
     },
 
     {
-      
+      service:'Bonding Agents',
       title:
         'Build Like Never Before: Building Doctor Bonding Agents',
         subHeading:'Unleash the full potential of your construction projects with Building Doctor\'s powerful bonding agents ',
@@ -46,7 +57,7 @@ export class ProductIntroComponent {
 
 
     {
-      
+      service:'Crack Filling',
       title:
         'Banish Cracks, Restore Strength: Building Doctor Crack Fillers',
         subHeading:' Eradicate unsightly cracks and fortify your structures with Building Doctor\'s comprehensive solution. ',
@@ -59,7 +70,7 @@ export class ProductIntroComponent {
 
 
     {
-      
+      service:'Corrosion Treatments',
       title:
         'Secure and Fortify: Building Doctor Grouts & Anchors',
         subHeading:'The unwavering foundation for lasting installations. ',

@@ -1,0 +1,40 @@
+.contact_banner{
+    height: 350px;
+    width: auto;
+    background: var(--header-background);
+    color: var(--header-font-color);
+    font-family: var(--font-semibold);
+    margin-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.content p{
+ font-size: 16px;
+ font-family: var(--font-regular);
+ color: var(--primaryColor);
+ line-height: 35px;
+}
+
+.content a{
+    text-decoration: none;
+    color: var(--button-gradient)
+}
+
+.content h6{
+    color: var(--primaryColor);
+    font-size: 20px;
+    font-family: var(--font-semibold);
+}
+
+.content ul{
+    font-size: 15px;
+    font-family: var(--font-regular);
+    line-height: 35px;
+    list-style-type: disclosure-closed;
+}
+

@@ -1,0 +1,58 @@
+.training-main{
+margin-top: 40px;
+}
+
+.training
+{
+    border: 1px solid #FC8D2B;
+    padding: 40px 50px;
+    border-radius: 15px;
+}
+
+.franchise-btn{
+    background: var(--button-gradient);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 24px;
+    color: var(--header-font-color);
+    font-size: 16px;
+    font-family: var(--font-medium);
+}
+
+.training h3{
+    font-size: 30px;
+    font-family: var(--font-medium);
+    color: var( --franchise-background);
+    line-height: 45px;
+}
+
+.inner-content{
+    font-size: 36px;
+    font-family: var(--font-bold);
+    line-height: 55px;
+
+}
+
+.training p{
+    font-size: 20px;
+    font-family: var(--font-regular);
+    line-height: 30px;
+    color: var( --franchise-background);
+
+}
+
+@media only screen and (max-width:991px){
+
+    .training h3{
+        font-size: 28px;
+    }
+    .inner-content{
+        font-size: 32px;
+    }
+    .training p{
+        font-size: 18px;
+    }
+    .training{
+        padding: 30px 25px;
+    }
+}

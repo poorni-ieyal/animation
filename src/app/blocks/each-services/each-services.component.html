@@ -24,9 +24,9 @@
                             <p>{{features.point4}}</p>
                         </li>
                     </ul>
-                    <h6 [ngClass]="{'card4': i == 3}">
-                        Learn More <span><i class="bi bi-arrow-right icon"></i></span>
-                    </h6>
+                    <h6>Learn More <span><img class="arrow-icon" [src]="i % 2 == 0 ? './assets/icons/arrow-icon.png' : './assets/icons/white-arrow-icon.png'" alt=""></span></h6>    
+
+                    <!-- <h6>Learn More <span><img class="arrow-icon" [src]="i % 2 == 0 ? './assets/icons/arrow-icon.png' : './assets/icons/white-arrow-icon.png'" alt=""></span></h6>     -->
                 </div>
             </div>
             <div class="col-lg-6"></div>

@@ -15,23 +15,29 @@
     color: var(--header-font-color);
     font-family: var(--font-regular);
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .first h3{
     font-size: 16px;
     color: var(--header-font-color);
     font-family: var(--font-semibold);
+    
 }
 
 .first h6{
     font-size: 16px;
     color: var(--header-font-color);
     font-family: var(--font-regular);
+    cursor: pointer;
+    line-height: 35px;
 }
 
 .first a{
     color: var(--header-font-color);
     text-decoration: none;
+    cursor: pointer;
+    line-height: 35px;
 
 }
 .social-icons{
@@ -44,6 +50,7 @@
   .social-icons img{
     width: 30px;
     height: auto;
+    cursor: pointer;
   }
 
 /* Responsive */

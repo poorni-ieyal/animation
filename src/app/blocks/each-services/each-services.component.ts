@@ -12,7 +12,7 @@ import { productFeatures } from 'src/interfaces/interface';
 export class EachServicesComponent {
   productFeatures: productFeatures[] = [
     {
-      
+      service:'',
       title:
         'Safeguard Your Concrete: Building Doctor Admixtures',
         subHeading:'Unlock superior concrete performance with Building Doctor\'s innovative admixture solutions. ',
@@ -24,7 +24,7 @@ export class EachServicesComponent {
     },
 
     {
-      
+      service:'',
       title:
         'Build Like Never Before: Building Doctor Bonding Agents',
         subHeading:'Unleash the full potential of your construction projects with Building Doctor\'s powerful bonding agents ',
@@ -37,7 +37,7 @@ export class EachServicesComponent {
 
 
     {
-      
+      service:'',
       title:
         'Banish Cracks, Restore Strength: Building Doctor Crack Fillers',
         subHeading:' Eradicate unsightly cracks and fortify your structures with Building Doctor\'s comprehensive solution. ',
@@ -50,7 +50,7 @@ export class EachServicesComponent {
 
 
     {
-      
+      service:'',
       title:
         'Secure and Fortify: Building Doctor Grouts & Anchors',
         subHeading:'The unwavering foundation for lasting installations. ',
@@ -62,7 +62,7 @@ export class EachServicesComponent {
     },
 
     {
-      
+      service:'',
       title:
         'Safeguard Your Concrete: Building Doctor Admixtures',
         subHeading:'Unlock superior concrete performance with Building Doctor\'s innovative admixture solutions. ',
@@ -74,7 +74,7 @@ export class EachServicesComponent {
     },
 
     {
-      
+      service:'',
       title:
         'Build Like Never Before: Building Doctor Bonding Agents',
         subHeading:'Unleash the full potential of your construction projects with Building Doctor\'s powerful bonding agents ',
@@ -87,7 +87,7 @@ export class EachServicesComponent {
 
 
     {
-      
+      service:'',
       title:
         'Banish Cracks, Restore Strength: Building Doctor Crack Fillers',
         subHeading:' Eradicate unsightly cracks and fortify your structures with Building Doctor\'s comprehensive solution. ',
@@ -100,7 +100,7 @@ export class EachServicesComponent {
 
 
     {
-      
+      service:'',
       title:
         'Secure and Fortify: Building Doctor Grouts & Anchors',
         subHeading:'The unwavering foundation for lasting installations. ',
@@ -112,7 +112,7 @@ export class EachServicesComponent {
     },
 
     {
-      
+      service:'',
       title:
         'Banish Cracks, Restore Strength: Building Doctor Crack Fillers',
         subHeading:' Eradicate unsightly cracks and fortify your structures with Building Doctor\'s comprehensive solution. ',
@@ -125,7 +125,7 @@ export class EachServicesComponent {
 
 
     {
-      
+      service:'',
       title:
         'Secure and Fortify: Building Doctor Grouts & Anchors',
         subHeading:'The unwavering foundation for lasting installations. ',

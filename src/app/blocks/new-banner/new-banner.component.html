@@ -1,0 +1,46 @@
+<div class="container banner-main">
+  <div class="banner">
+    <div class="row banner-row">
+      <div class="col-lg-7">
+        <div class="banner-left">
+          <h6>
+            <span
+              ><img src="../../../assets/icons/orange-tick-icon.png" alt="icon"
+            /></span>
+            Affordable Solutions. Expert Results
+          </h6>
+
+          <div class="gap-div">
+            <h1>
+              Building Problems Solved <br />
+              <div class="text-container">
+                <span
+                  class="text"
+                  *ngFor="let text of textStrings; let i = index"
+                  [style.animation-delay]="i * 8 + 's'"
+                  >{{ text }}</span
+                >
+              </div>
+            </h1>
+            <h5 class="para">Get your building back to its happy self.</h5>
+            <div class="btn-common">
+              <button class="gradient-btn">Register Site Visit</button>
+              <h6 class="contact">Contact Our Expert</h6>
+            </div>
+          </div>
+        </div>
+        <div class="iso-text">
+          <h6>An ISO 9001:2000 certified Company</h6>
+        </div>
+      </div>
+
+      <div class="col-lg-5 banner-right">
+        <img
+          class="banner-img"
+          src="../../../assets/images/banner-image.png"
+          alt="banner image"
+        />
+      </div>
+    </div>
+  </div>
+</div>
